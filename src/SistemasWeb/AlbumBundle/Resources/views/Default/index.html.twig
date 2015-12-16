@@ -1,0 +1,70 @@
+{% extends "::base.html.twig" %}
+
+{% block header %}
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button> <a class="navbar-brand" href="{{ path('album_homepage') }}"><img src="{{ asset('bundles/album/images/camera.png') }}" />PhotoAlbum Online</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!--
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-default">
+                Submit
+            </button>
+        </form>
+        -->
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#">Ver Albumes públicos</a>
+            </li>
+            <!--
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Action</a>
+                    </li>
+                    <li>
+                        <a href="#">Another action</a>
+                    </li>
+                    <li>
+                        <a href="#">Something else here</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </li>
+            -->
+            <li>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+    <div class="col-md-7"><img class="indexImage" src="{{ asset('bundles/album/images/paisaje.jpg') }}" /></div>
+    <div class="col-md-5"><h2>
+            PhotoAlbum
+        </h2>
+
+        <p>
+            This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        </p>
+        <p>
+            <a class="btn btn-primary btn-large" href="#">Registrarse</a>
+        </p></div>
+    </div>
+{% endblock %}

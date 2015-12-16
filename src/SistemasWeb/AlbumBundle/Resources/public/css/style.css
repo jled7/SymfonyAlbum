@@ -1,0 +1,19 @@
+body {
+    font-size:200px;
+}
+
+.navbar-brand img {
+
+    margin:-6px 10px;
+    float:left;
+    width:30px;
+}
+.right_article {
+    float:right;
+    max-width:500px;
+}
+.indexImage {
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius: 20px;
+}
