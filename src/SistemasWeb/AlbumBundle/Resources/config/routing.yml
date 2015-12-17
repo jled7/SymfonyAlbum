@@ -1,3 +1,23 @@
 album_homepage:
     path:     /
     defaults: { _controller: AlbumBundle:Default:index }
+
+album_login:
+    path:     /login
+    defaults: { _controller: AlbumBundle:Default:login }
+
+album_registro:
+    path:     /registro
+    defaults: { _controller: AlbumBundle:Default:registro }
+
+user_logout:
+    path:     /logout
+    defaults: { _controller: AlbumBundle:User:logout }
+
+user_homepage:
+    path:     /dashboard
+    defaults: { _controller: AlbumBundle:User:dashboard }
+
+admin_homepage:
+     path:     /admin
+     defaults: { _controller: AlbumBundle:Admin:dashboard }

@@ -46,7 +46,7 @@
             </li>
             -->
             <li>
-                <a href="{{ path('album_login') }}">Login</a>
+                <a href="{{ path('album_registro') }}">Registrarse</a>
             </li>
         </ul>
     </div>
@@ -55,20 +55,33 @@
 
 {% block body %}
     <div class="row">
-    <div class="col-md-7"><img class="indexImage" src="{{ asset('bundles/album/images/paisaje.jpg') }}" /></div>
-    <div class="col-md-5"><h2>
-            PhotoAlbum
-        </h2>
-
-        <p>
-            Esta aplicación te ayudará a catalogar tus fotos y subirlas a la nube para compartirlas con tus amigos. Regístrese para obtener acceso a todas las funcionalidades de esta fantastica pagina web.
-        </p>
-
-        <p>
-            Crea tu album digital con tus fotos preferidas. El album foto es la mejor forma de guardar y compartir tu fotos, tus recuerdos.
-        </p><br/>
-        <p>
-            <a class="register btn btn-primary btn-large " href="{{ path('album_registro') }}">Registrarse</a>
-        </p></div>
+    <div class="col-md-7"><img class="indexImage" src="{{ asset('bundles/album/images/paisaje2.jpg') }}" /></div>
+    <div class="col-md-5">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="page-header">
+                    <h3>Inicia Sesión</h3>
+                </div>
+                <form role="form" action="login" method="post">
+                    {% if message is defined %}
+                        <div class="form-group">
+                            <label class="error">{{ message }}</label>
+                        </div>
+                    {% endif %}
+                    <div class="form-group">
+                        <label for="username">Usuario</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Introduzca su usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <hr />
+                    <button type="button" class="btn btn-success">Back</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+       </div>
     </div>
 {% endblock %}
