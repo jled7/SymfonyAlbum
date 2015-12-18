@@ -22,13 +22,10 @@
             -->
             <ul class="nav navbar-nav navbar-right">
                 {% if user.admin %}
-                <li>
-                    <a href="{{ path('admin_homepage') }}">Administración</a>
-                </li>
+                    <li>
+                        <a href="{{ path('admin_homepage') }}">Administración</a>
+                    </li>
                 {% endif %}
-                <li>
-                    <a href="{{ path('album_public') }}">Ver Albumes públicos</a>
-                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ user.username }}<strong class="caret"></strong></a>
                     <ul class="dropdown-menu">
@@ -52,16 +49,33 @@
 
 {% block body %}
     <div class="row">
-        <div class="col-md-7"><img class="indexImage" src="{{ asset('bundles/album/images/paisaje.jpg') }}" /></div>
-        <div class="col-md-5"><h2>
-                PhotoAlbum
-            </h2>
+        <center>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>User</th>
+                <th>Correo</th>
+                <th>Opciones</th>
+            </tr>
+            <tr>
+                {% for user in users %}
+                <td width="100px" height="30px">{{ user.id }}</td>
+                <td width="100px">{{ user.username }}</td>
+                <td width="200px">{{ user.email }}</td>
+                <td width="200px">
+                    {% if user.active == true %}
 
-            <p>
-                This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-            </p>
-            <p>
-                <a class="register btn btn-primary btn-large" href="{{ path('album_create') }}">Crear un album</a>
-            </p></div>
+                        <a href="{{ path('admin_deactivate', {'id': user.id}) }}">Desactivar Usuario</a>
+
+                    {% else %}
+                        <a href="{{ path('admin_activate', {'id': user.id}) }}">Activar Usuario</a>
+                    {% endif %}
+                    <br />
+                    <a href="{{ path('admin_removeUser', {'id': user.id}) }}">Eliminar Usuario</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        </center>
     </div>
 {% endblock %}

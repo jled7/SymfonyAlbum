@@ -2,6 +2,11 @@ album_homepage:
     path:     /
     defaults: { _controller: AlbumBundle:Default:index }
 
+album_public:
+    path:     /public
+    defaults: { _controller: AlbumBundle:Default:showPublic }
+
+
 album_login:
     path:     /login
     defaults: { _controller: AlbumBundle:Default:login }
@@ -14,6 +19,10 @@ user_logout:
     path:     /logout
     defaults: { _controller: AlbumBundle:User:logout }
 
+user_edit:
+    path:     /user/edit
+    defaults: { _controller: AlbumBundle:User:edit }
+
 user_homepage:
     path:     /dashboard
     defaults: { _controller: AlbumBundle:User:dashboard }
@@ -21,3 +30,31 @@ user_homepage:
 admin_homepage:
      path:     /admin
      defaults: { _controller: AlbumBundle:Admin:dashboard }
+
+admin_album:
+      path:     /admin/album
+      defaults: { _controller: AlbumBundle:Admin:editAlbum }
+
+admin_user:
+      path:     /admin/user
+      defaults: { _controller: AlbumBundle:Admin:editUser }
+
+admin_activate:
+      path:     /admin/user/activate/{id}
+      defaults: { _controller: AlbumBundle:Admin:activateUser }
+
+admin_deactivate:
+      path:     /admin/user/deactivate/{id}
+      defaults: { _controller: AlbumBundle:Admin:deactivateUser }
+
+admin_removeUser:
+      path:     /admin/user/remove/{id}
+      defaults: { _controller: AlbumBundle:Admin:removeUser }
+
+admin_removeAlbum:
+      path:     /admin/album/remove/{id}
+      defaults: { _controller: AlbumBundle:Admin:removeAlbum }
+
+album_create:
+      path:     /album/create
+      defaults: { _controller: AlbumBundle:User:createAlbum }

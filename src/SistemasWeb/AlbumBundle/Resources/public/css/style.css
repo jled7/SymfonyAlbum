@@ -20,3 +20,33 @@
 .error {
     color:red;
 }
+.box {
+    width:300px;
+}
+.album ul {
+overflow:auto;
+}
+.album li {
+    margin:0 2px 40px 0;
+    float:left;
+    list-style-type: none;
+
+    width:200px;
+    height:100px;
+}
+.album img {
+    height:100px;
+    width:200px;
+}
+.album a {
+    display:block;
+    text-align:center;
+}
+.admin {
+    border:1px solid black;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius: 20px;
+    padding:20px;
+    margin:0 12px;
+}

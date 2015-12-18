@@ -50,6 +50,7 @@ class User implements UserInterface, \Serializable
         // $this->isActive = true;
         // may not be needed, see section on salt below
         // $this->salt = md5(uniqid(null, true));
+        $this->setAdmin(0);
     }
 
     public function getUsername()
@@ -85,6 +86,9 @@ class User implements UserInterface, \Serializable
             $this->id,
             $this->username,
             $this->password,
+            $this->email,
+            $this->admin,
+            $this->active
             // see section on salt below
             // $this->salt,
         ));
@@ -97,6 +101,9 @@ class User implements UserInterface, \Serializable
             $this->id,
             $this->username,
             $this->password,
+            $this->email,
+            $this->admin,
+            $this->active
             // see section on salt below
             // $this->salt
             ) = unserialize($serialized);
@@ -212,11 +219,17 @@ class User implements UserInterface, \Serializable
         return $this->admin;
     }
 
+    /**
+     * Is admin
+     *
+     * @return boolean
+     */
     public function isAdmin()
     {
-        if($this->admin) {
+        if($this->admin == true) {
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 }

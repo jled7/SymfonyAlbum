@@ -14,7 +14,7 @@ class DefaultController extends Controller
             $session = $this->getRequest()->getSession();
             $user = $session->get('login');
             return $this->redirect($this->generateUrl('user_homepage'));
-    }
+        }
         return $this->render('AlbumBundle:Default:index.html.twig');
 
     }
@@ -63,7 +63,7 @@ class DefaultController extends Controller
             try {
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($user);
-                $emaitza = $em->flush();
+                $em->flush();
             } catch (\Exception $e) {
                 return $this->render('AlbumBundle:Default:registro.html.twig', array('message'=>'Ya existe un usuario con ese nombre o correo'));
             }
@@ -72,6 +72,16 @@ class DefaultController extends Controller
         } else {
             return $this->render('AlbumBundle:Default:registro.html.twig');
         }
+    }
+    public function showPublicAction()
+    {
+
+        $session = $this->getRequest()->getSession();
+        $user = $session->get('login');
+        $em = $this->getDoctrine()->getEntityManager();
+        $repository = $em->getRepository("AlbumBundle:Album");
+        $albums = $repository->findBy(array('public' => 1));
+        return $this->render('AlbumBundle:Default:public.html.twig', array('albums' => $albums));
     }
     private function isLogged() {
         $session = $this->getRequest()->getSession();

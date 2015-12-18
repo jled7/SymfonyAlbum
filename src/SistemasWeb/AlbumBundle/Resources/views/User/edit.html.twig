@@ -52,16 +52,48 @@
 
 {% block body %}
     <div class="row">
-        <div class="col-md-7"><img class="indexImage" src="{{ asset('bundles/album/images/paisaje.jpg') }}" /></div>
-        <div class="col-md-5"><h2>
-                PhotoAlbum
-            </h2>
+        <div class="col-md-7">
 
-            <p>
-                This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-            </p>
-            <p>
-                <a class="register btn btn-primary btn-large" href="{{ path('album_create') }}">Crear un album</a>
-            </p></div>
+        </div>
+
+
+        <div class="col-md-5">
+            <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="page-header">
+                    <h3>Cambiar contraseña</h3>
+                </div>
+                <form role="form" action="edit" method="post">
+                    {% if message is defined %}
+                    <div class="form-group">
+                        <label class="error">{{ message }}</label>
+                    </div>
+                    {% endif %}
+                    {% if success is not defined %}
+                        <div class="form-group">
+                            <label for="username">Usuario</label>
+                            <input type="text" class="form-control" id="username" name="username" value="{{ user.username }}" disabled="disabled" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="oldpassword">Old Password</label>
+                            <input type="password" class="form-control" id="oldpassword" name="oldpassword" placeholder="Old Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newpassword">New Password</label>
+                            <input type="password" class="form-control" id="newpassword" name="newpassword" placeholder="New Password" required>
+                        </div>
+                        <hr />
+                        <button type="submit" class="btn btn-primary">Editar</button>
+                    {% else %}
+                        <div class="form-group">
+                            <label>Password correctamente editado</label><br />
+                            <a href="{{ path('user_homepage') }}">Home</a>
+                        </div>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+       </div>
+        </div>
     </div>
 {% endblock %}
