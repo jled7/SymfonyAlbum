@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1e500ed-27c2-4201-ab28-2f4878c18560" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/photo.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/error.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/photo.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/view.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/view.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/AdminController.php" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Photo.php" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Photo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/public/css/style.css" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/index.html.twig" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/public.html.twig" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/public.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/create.html.twig" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/create.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/index.html.twig" afterPath="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/index.html.twig" />
     </list>
     <ignored path="album.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,73 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/DefaultController.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.296296">
-              <caret line="110" column="46" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.62963">
-              <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
-              <folding>
-                <element signature="e#54#111#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="photo.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/photo.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6501767">
-              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.962963">
-              <caret line="134" column="83" selection-start-line="134" selection-start-column="83" selection-end-line="134" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Album.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Album.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="11.703704">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="photo.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/photo.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/photo.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/user.html.twig">
+      <file leaf-file-name="create.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/create.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.3333335">
-              <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -115,18 +61,48 @@
       <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9629629">
-              <caret line="62" column="79" selection-start-line="62" selection-start-column="79" selection-end-line="62" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="127" column="23" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.833333">
+              <caret line="114" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Album.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Album.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="50" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Photo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.5416666">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.62963">
-              <caret line="53" column="80" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="69" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -136,7 +112,17 @@
         <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+              <caret line="37" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/view.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7644991">
+              <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -170,10 +156,8 @@
         <option value="$PROJECT_DIR$/web/app.php" />
         <option value="$PROJECT_DIR$/web/bundles/album/css/style.css" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/registro.html.twig" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/index.html.twig" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/album.html.twig" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/user.html.twig" />
@@ -186,13 +170,15 @@
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/public/css/style.css" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/create.html.twig" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/view.html.twig" />
-        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/AdminController.php" />
         <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/photo.html.twig" />
+        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig" />
       </list>
     </option>
   </component>
@@ -798,7 +784,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -1094,23 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="172" selection-start-line="63" selection-start-column="170" selection-end-line="63" selection-end-column="172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.185185">
-          <caret line="96" column="44" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
-          <folding>
-            <element signature="e#50#82#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1123,14 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.333334">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -1193,46 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.666667">
-          <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9629629">
-          <caret line="62" column="65" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Album.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.703704">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9629629">
-          <caret line="62" column="79" selection-start-line="62" selection-start-column="79" selection-end-line="62" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.962963">
@@ -1259,7 +1180,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/photo.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33333334">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1267,23 +1188,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/user.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.3333335">
+        <state vertical-scroll-proportion="0.33333334">
           <caret line="32" column="80" selection-start-line="32" selection-start-column="80" selection-end-line="32" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.62963">
+        <state vertical-scroll-proportion="0.33333334">
           <caret line="98" column="60" selection-start-line="98" selection-start-column="60" selection-end-line="98" selection-end-column="60" />
           <folding>
             <element signature="e#54#111#0#PHP" expanded="true" />
@@ -1293,8 +1206,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Admin/photo.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6501767">
+        <state vertical-scroll-proportion="0.33333334">
           <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="69" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="62" column="56" selection-start-line="62" selection-start-column="56" selection-end-line="62" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="127" column="23" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.833333">
+          <caret line="114" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Album.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="50" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Entity/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5416666">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemasWeb/AlbumBundle/Resources/views/User/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7644991">
+          <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
           <folding />
         </state>
       </provider>

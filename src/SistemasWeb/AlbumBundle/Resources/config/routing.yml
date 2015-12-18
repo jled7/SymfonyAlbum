@@ -11,7 +11,7 @@ album_public_view:
     defaults: { _controller: AlbumBundle:Default:showAlbums }
 
 album_show_photo:
-    path:     /show/{id}
+    path:     /public/show/{id}
     defaults: { _controller: AlbumBundle:Default:showImage }
 
 album_login:
