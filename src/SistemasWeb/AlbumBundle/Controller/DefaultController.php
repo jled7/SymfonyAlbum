@@ -75,14 +75,42 @@ class DefaultController extends Controller
     }
     public function showPublicAction()
     {
-
         $session = $this->getRequest()->getSession();
         $user = $session->get('login');
         $em = $this->getDoctrine()->getEntityManager();
         $repository = $em->getRepository("AlbumBundle:Album");
         $albums = $repository->findBy(array('public' => 1));
-        return $this->render('AlbumBundle:Default:public.html.twig', array('albums' => $albums));
+        return $this->render('AlbumBundle:Default:public.html.twig', array('user' => $user, 'albums' => $albums));
     }
+    public function showAlbumsAction($id)
+    {
+        $session = $this->getRequest()->getSession();
+        $user = $session->get('login');
+        $em = $this->getDoctrine()->getEntityManager();
+        $repository = $em->getRepository("AlbumBundle:Photo");
+        $repositoryAlbums = $em->getRepository("AlbumBundle:Album");
+        $album = $repository->findOneBy(array('id' => $id));
+        $photos = $repository->findBy(array('albumId' => $id));
+        $albumPriv = $repositoryAlbums->findOneBy(array('id' => $id));
+        if($albumPriv->getPrivate() == 1) {
+            return $this->render('AlbumBundle:Default:error.html.twig', array('message' => 'Este album es privado', 'user' => $user));
+        }
+        return $this->render('AlbumBundle:Default:view.html.twig', array('user' => $user,'album' => $album,'photos' => $photos));
+    }
+    public function showImageAction($id) {
+        $session = $this->getRequest()->getSession();
+        $user = $session->get('login');
+        $em = $this->getDoctrine()->getEntityManager();
+        $repository = $em->getRepository("AlbumBundle:Photo");
+        $repositoryAlbums = $em->getRepository("AlbumBundle:Album");
+        $photo = $repository->findOneBy(array('id' => $id));
+        $album = $repositoryAlbums->findOneBy(array('id' => $photo->getAlbumId()));
+        if($album->getPrivate() == 1) {
+            return $this->render('AlbumBundle:Default:error.html.twig', array('message' => 'Esta foto es privada', 'user' => $user));
+        }
+        return $this->render('AlbumBundle:User:photo.html.twig', array('user' => $user,'photo' => $photo));
+    }
+
     private function isLogged() {
         $session = $this->getRequest()->getSession();
         $user = $session->get('login');

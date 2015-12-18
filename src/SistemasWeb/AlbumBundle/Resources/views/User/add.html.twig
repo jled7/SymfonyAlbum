@@ -55,12 +55,12 @@
         <div class="col-md-7">
 
                 <div class="form-group">
-                    <h1>Albumes</h1>
+                    <h1>{{ album.nombre }}</h1>
                     <ul class="album">
-                        {% for album in albums %}
+                        {% for photo in photos %}
                             <li>
-                                <img src="{{ asset('bundles/album/images/book.jpg') }}" />
-                                <a href="{{ path('album_add', {'id':album.id}) }}">{{ album.nombre }}</a>
+                                <img src="data:image/jpeg;base64,{{ photo.getImage() }}" />
+                                <a href="{{ path('album_user_view', {'id':photo.id}) }}">{{ photo.nombre }}</a>
                             </li>
                         {% endfor %}
                     </ul>
@@ -74,9 +74,10 @@
             <div class="panel panel-default box">
                 <div class="panel-body">
                     <div class="page-header">
-                        <h3>Crear Album</h3>
+                        <h3>Subir foto</h3>
                     </div>
-                    <form role="form" action="create" method="post">
+                    <form role="form" action='upload' method="post">
+                        <input type="hidden" value="{{ album.id }}" name="album"/>
                         {% if message is defined %}
                             <div class="form-group">
                                 <label class="error">{{ message }}</label>
@@ -84,19 +85,50 @@
                         {% endif %}
                             <div class="form-group">
                                 <label for="username">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduzca el nombre del album" required>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduzca el nombre de la foto" required>
                             </div>
                             <div class="form-group">
-                                <label for="privacidad">Privacidad</label><br/>
-                                <input type="radio" name="privacidad" value="private" checked>Privado
-                                <br>
-                                <input type="radio" name="privacidad" value="public">Público
-                            </div>
+                                <input type="file" name="image" id="image"/>
+                                <div class="upload">
+                                    <label for="image" class="btn btn-sm btn-info">Select Photo</label><br/><br/>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar" style="width:0%"></div>
+                                    </div>
+
+
                             <hr />
-                            <button type="submit" class="btn btn-primary">Crear Album</button>
+                            <button type="submit" class="btn btn-primary">Subir foto</button></div></div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).on('submit', 'form', function(e){
+            e.preventDefault();
+            $form = $(this);
+
+            uploadImage($form);
+        });
+
+        function uploadImage($form) {
+            var formData = new FormData($form[0]);
+            var request = new XMLHttpRequest();
+            request.open('post', '{{ path('album_upload') }}');
+            request.send(formData);
+
+            request.upload.addEventListener('progress', function(e) {
+                var percent = Math.round(e.loaded / e.total * 100);
+                $form.find('.progress-bar').width(percent+'%');
+
+            });
+            request.addEventListener('load', function(e) {
+                setTimeout(function () {
+                    window.location = "{{ path('album_add', {'id':album.id}) }}";
+                }, 10);
+
+            })
+        }
+
+    </script>
 {% endblock %}

@@ -50,3 +50,12 @@ overflow:auto;
     padding:20px;
     margin:0 12px;
 }
+input[type="file"] {
+    display:none;
+}
+.upload {
+    padding:0 20px;
+}
+.to_show {
+    max-width: 600px;
+}

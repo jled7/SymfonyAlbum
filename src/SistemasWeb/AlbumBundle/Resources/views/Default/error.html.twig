@@ -21,11 +21,29 @@
             </form>
             -->
             <ul class="nav navbar-nav navbar-right">
+                {% if user.admin %}
+                    <li>
+                        <a href="{{ path('admin_homepage') }}">Administración</a>
+                    </li>
+                {% endif %}
                 <li>
                     <a href="{{ path('album_public') }}">Ver Albumes públicos</a>
                 </li>
-                <li>
-                    <a href="{{ path('album_login') }}">Login</a>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ user.username }}<strong class="caret"></strong></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{ path('album_create') }}">Crear Album</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('user_edit') }}">Cambiar contraseña</a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li>
+                            <a href="{{ path('user_logout') }}">Logout</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -34,20 +52,6 @@
 
 {% block body %}
     <div class="row">
-        <div class="col-md-12">
-
-                <div class="form-group">
-                    <h1>Albumes</h1>
-                    <ul class="album">
-                        {% for album in albums %}
-                            <li>
-                                <img src="{{ asset('bundles/album/images/book.jpg') }}" />
-                                <a href="{{ path('album_public_view', {'id':album.id}) }}">{{ album.nombre }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-        </div>
+        <center><h1>{{ message }}</h1></center>
     </div>
 {% endblock %}

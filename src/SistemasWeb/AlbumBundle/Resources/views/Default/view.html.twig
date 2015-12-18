@@ -22,9 +22,9 @@
             -->
             <ul class="nav navbar-nav navbar-right">
                 {% if user.admin %}
-                <li>
-                    <a href="{{ path('admin_homepage') }}">Administración</a>
-                </li>
+                    <li>
+                        <a href="{{ path('admin_homepage') }}">Administración</a>
+                    </li>
                 {% endif %}
                 <li>
                     <a href="{{ path('album_public') }}">Ver Albumes públicos</a>
@@ -52,51 +52,23 @@
 
 {% block body %}
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-12">
 
-                <div class="form-group">
-                    <h1>Albumes</h1>
-                    <ul class="album">
-                        {% for album in albums %}
-                            <li>
-                                <img src="{{ asset('bundles/album/images/book.jpg') }}" />
-                                <a href="{{ path('album_add', {'id':album.id}) }}">{{ album.nombre }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-
-        </div>
-
-
-        <div class="col-md-5">
-            <div class="panel panel-default box">
-                <div class="panel-body">
-                    <div class="page-header">
-                        <h3>Crear Album</h3>
-                    </div>
-                    <form role="form" action="create" method="post">
-                        {% if message is defined %}
-                            <div class="form-group">
-                                <label class="error">{{ message }}</label>
-                            </div>
-                        {% endif %}
-                            <div class="form-group">
-                                <label for="username">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduzca el nombre del album" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="privacidad">Privacidad</label><br/>
-                                <input type="radio" name="privacidad" value="private" checked>Privado
-                                <br>
-                                <input type="radio" name="privacidad" value="public">Público
-                            </div>
-                            <hr />
-                            <button type="submit" class="btn btn-primary">Crear Album</button>
-                    </form>
-                </div>
+            <div class="form-group">
+                <h1>{{ album.nombre }}</h1>
+                <ul class="album">
+                    {% for photo in photos %}
+                        <li>
+                            <a href="{{ path('album_show_photo', {'id':photo.id}) }}"></a><img src="data:image/jpeg;base64,{{ photo.getImage() }}" />
+                            <a href="{{ path('album_show_photo', {'id':photo.id}) }}">{{ photo.nombre }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
+
+
         </div>
+
+
     </div>
 {% endblock %}

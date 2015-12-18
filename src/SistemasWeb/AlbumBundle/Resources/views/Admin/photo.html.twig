@@ -49,8 +49,26 @@
 
 {% block body %}
     <div class="row">
-        <center><a class="admin" href="{{ path('admin_album') }}">Administrar Albumes</a>
-            <a class="admin" href="{{ path('admin_user') }}">Administrar Usuarios</a>
-            <a class="admin" href="{{ path('admin_photos') }}">Administrar Fotos</a></center>
+        <center>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>AlbumId</th>
+                <th>Opciones</th>
+            </tr>
+            <tr>
+                {% for photo in photos %}
+                <td width="100px" height="30px">{{ photo.id }}</td>
+                <td width="100px">{{ photo.nombre }}</td>
+                <td width="200px">{{ photo.albumId }}</td>
+                <td width="200px">
+                    <br />
+                    <a href="{{ path('admin_removePhoto', {'id': photo.id}) }}">Eliminar Foto</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        </center>
     </div>
 {% endblock %}

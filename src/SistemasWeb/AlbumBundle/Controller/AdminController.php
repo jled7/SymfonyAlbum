@@ -40,6 +40,15 @@ class AdminController extends Controller
         return $this->render('AlbumBundle:Admin:user.html.twig', array('users'=> $users, 'user' => $user));
     }
 
+    public function editPhotoAction() {
+        $em = $this->getDoctrine()->getEntityManager();
+        $repository = $em->getRepository("AlbumBundle:Photo");
+        $photos = $repository->findAll();
+        $session = $this->getRequest()->getSession();
+        $user = $session->get('login');
+        return $this->render('AlbumBundle:Admin:photo.html.twig', array('photos'=> $photos, 'user' => $user));
+    }
+
     public function activateUserAction($id) {
         $em = $this->getDoctrine()->getEntityManager();
         $repository = $em->getRepository("AlbumBundle:User");
@@ -82,6 +91,17 @@ class AdminController extends Controller
             $em->flush();
         }
         return $this->redirect($this->generateUrl('admin_album'));
+    }
+
+    public function removePhotoAction($id) {
+        $em = $this->getDoctrine()->getEntityManager();
+        $repository = $em->getRepository("AlbumBundle:Photo");
+        $photo = $repository->findOneBy(array('id' => $id));
+        if($photo) {
+            $em->remove($photo);
+            $em->flush();
+        }
+        return $this->redirect($this->generateUrl('admin_photos'));
     }
 
     private function isLogged() {

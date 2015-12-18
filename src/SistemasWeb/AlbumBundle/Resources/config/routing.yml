@@ -6,6 +6,13 @@ album_public:
     path:     /public
     defaults: { _controller: AlbumBundle:Default:showPublic }
 
+album_public_view:
+    path:     /public/view/{id}
+    defaults: { _controller: AlbumBundle:Default:showAlbums }
+
+album_show_photo:
+    path:     /show/{id}
+    defaults: { _controller: AlbumBundle:Default:showImage }
 
 album_login:
     path:     /login
@@ -39,6 +46,10 @@ admin_user:
       path:     /admin/user
       defaults: { _controller: AlbumBundle:Admin:editUser }
 
+admin_photos:
+      path:     /admin/photo
+      defaults: { _controller: AlbumBundle:Admin:editPhoto }
+
 admin_activate:
       path:     /admin/user/activate/{id}
       defaults: { _controller: AlbumBundle:Admin:activateUser }
@@ -55,6 +66,22 @@ admin_removeAlbum:
       path:     /admin/album/remove/{id}
       defaults: { _controller: AlbumBundle:Admin:removeAlbum }
 
+admin_removePhoto:
+      path:     /admin/photo/remove/{id}
+      defaults: { _controller: AlbumBundle:Admin:removePhoto }
+
 album_create:
       path:     /album/create
       defaults: { _controller: AlbumBundle:User:createAlbum }
+
+album_add:
+      path:     /album/add/{id}
+      defaults: { _controller: AlbumBundle:User:uploadPhoto }
+
+album_upload:
+      path:     /album/upload
+      defaults: { _controller: AlbumBundle:User:upload }
+
+album_user_view:
+    path:     /user/show/{id}
+    defaults: { _controller: AlbumBundle:User:showImage }
